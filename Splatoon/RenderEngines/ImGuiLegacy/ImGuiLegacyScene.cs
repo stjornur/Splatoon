@@ -93,7 +93,7 @@ internal class ImGuiLegacyScene : IDisposable
                     ImGui.PushStyleVar(ImGuiStyleVar.WindowPadding, Vector2.Zero);
                     ImGuiHelpers.SetNextWindowPosRelativeMainViewport(Vector2.Zero);
                     ImGui.SetNextWindowSize(ImGuiHelpers.MainViewport.Size);
-                    ImGui.Begin("Splatoon Legacy Renderer Scene", ImGuiWindowFlags.NoInputs | ImGuiWindowFlags.NoNav | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoBackground | ImGuiWindowFlags.AlwaysUseWindowPadding | ImGuiWindowFlags.NoSavedSettings);
+                    ImGui.Begin("Splatoon Legacy Renderer Scene", ImGuiWindowFlags.NoInputs | ImGuiWindowFlags.NoNav | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoBackground | ImGuiWindowFlags.AlwaysUseWindowPadding | ImGuiWindowFlags.NoSavedSettings | ImGuiWindowFlags.NoFocusOnAppearing);
                     if (P.Config.SplatoonLowerZ)
                     {
                         CImGui.igBringWindowToDisplayBack(CImGui.igGetCurrentWindow());
